@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Simulator Meta Ads · Kampus Dosen Jualan</title>
+<meta name="description" content="Main simulator Meta Ads pakai uang mainan. Rasakan boncosnya tanpa kehilangan uang asli.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="brand"><span class="logo">KDJ</span> Kampus Dosen Jualan</div><span class="tag">⚠ Simulasi edukasi · bukan data Meta asli</span></header>
+<main>
+<section id="intro" class="screen">
+ <div class="hero"><p class="kicker">🎮 Simulator Meta Ads</p>
+ <h1>Boncos pakai <mark>uang mainan</mark>,<br>bukan uang asli.</h1>
+ <p class="lead">Kamu pegang bisnis kue rumahan dan modal iklan <b>Rp500.000</b>. Ambil keputusan tiap hari, lihat hasilnya, dan buktikan kamu bisa untung.</p>
+ <div class="chips"><span>📅 7 hari</span><span>💰 Rp500.000</span><span>🧠 4 keputusan/hari</span></div>
+ <button class="btn big" id="start">Mulai Simulasi ▶</button></div>
+ <div class="card prod"><div class="cake">🍰</div><h3>Produk kamu: Kue Rumahan</h3>
+ <div class="rows"><div><small>Harga jual</small><b>Rp100.000</b></div><div><small>Margin</small><b>40%</b></div><div><small>Untung/kue</small><b>Rp40.000</b></div></div>
+ <p class="note">Titik impas ROAS = 100 ÷ 40 = <mark>2,5×</mark>. Di bawah itu, iklanmu rugi.</p></div>
+</section>
+
+<section id="game" class="screen" hidden>
+ <div class="stats"><div class="st"><small>Hari</small><b id="sDay">1/7</b></div><div class="st"><small>Saldo mainan</small><b id="sBal">Rp500.000</b></div><div class="st"><small>Total biaya iklan</small><b id="sSpend">Rp0</b></div><div class="st"><small>Total pembeli</small><b id="sSales">0</b></div></div>
+ <div class="dots" id="dots"></div>
+ <div class="grid">
+  <div class="card"><h2>Keputusan Hari <span id="dNum">1</span></h2><div id="decisions"></div>
+   <div class="acts"><button class="btn" id="run">Tayangkan Hari Ini ▶</button><button class="btn ghost" id="skip">⏭ Skip 1 hari</button><button class="btn ghost" id="skip3">⏭⏭ Skip 3 hari</button></div>
+   <p class="note">Skip = jalan terus dengan setting yang sama.</p></div>
+  <div class="card res"><h2>Hasil <span id="rTitle">belum ada</span></h2>
+   <div id="empty" class="empty">👈 Pilih keputusanmu lalu tayangkan iklan.</div>
+   <div id="out" hidden><div class="mets" id="mets"></div><div class="ins" id="ins"></div></div>
+   <h4>Laba/rugi per hari</h4><div class="bars" id="bars"></div></div>
+ </div>
+</section>
+
+<section id="end" class="screen" hidden>
+ <div class="hero center"><p class="kicker">🏁 Simulasi selesai</p><div class="emoji" id="eEmoji"></div><h1 id="eTitle"></h1>
+ <p class="lead" id="eSub"></p>
+ <div class="mets final" id="eMets"></div>
+ <div class="card gap"><h3>🔒 Yang TIDAK bisa disimulasikan</h3><ul><li>Setup iklan di <b>akun Meta asli</b> (Pixel, pembayaran, verifikasi)</li><li>Membaca <b>data riil</b> dan memutuskan: matikan, scale, atau ganti</li><li>Iklan ditolak, akun dibatasi, dan <b>kompetitor</b> yang rebutan audiens</li><li>Optimasi lanjutan: retargeting, A/B test, scaling budget</li></ul>
+ <p class="note">Itu semua dibahas langsung dengan praktik di <mark>kelas offline lanjutan</mark>.</p></div>
+ <div class="acts c"><a class="btn big" id="join" href="#" target="_blank" rel="noopener">Daftar Kelas Offline 🚀</a><button class="btn ghost" id="again">↺ Main Lagi</button></div></div>
+</section>
+</main>
+<footer>Simulasi edukasi KDJ · angka hanya model sederhana, hasil iklan nyata berbeda.</footer>
+<script src="app.js"></script></body></html>
